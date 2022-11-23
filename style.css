@@ -9,6 +9,12 @@ body {
   	background-color: #435165;
 }
 
+.register {
+	height: 60px;
+	width: 100%;
+	border: 0;
+}
+
 .login {
   	width: 400px;
   	background-color: #ffffff;
