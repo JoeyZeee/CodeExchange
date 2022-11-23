@@ -25,13 +25,13 @@ $stmt->close();
 
 if ($_SESSION['name'] == "Joey Z" || $_SESSION['name'] == "Alex C") {
   $rank = "Admin";
-} else if ($num_bits >= 0 && $num_bits < 500) {
+} else if ($num_bits >= 0 && $num_bits <= 500) {
   $rank = "Newbie";
-} else if ($num_bits > 500 && $num_bits < 1500) {
+} else if ($num_bits > 500 && $num_bits <= 1500) {
   $rank = "Rookie";
-} else if ($num_bits > 1500 && $num_bits < 3000) {
+} else if ($num_bits > 1500 && $num_bits <= 3000) {
   $rank = "Advanced";
-} else if ($num_bits > 3000 && $num_bits < 5000) {
+} else if ($num_bits > 3000 && $num_bits <= 5000) {
   $rank = "Expert";
 } else {
   $rank = "Undefined";
