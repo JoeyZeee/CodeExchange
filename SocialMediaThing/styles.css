@@ -82,8 +82,7 @@ body {
     transition: 0.4s;
 }
 
-/* Download Now Button */
-#download-now {
+#register-now {
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: large;
@@ -100,7 +99,7 @@ body {
     background: linear-gradient(90deg, rgba(169, 125, 93, 1) 0%, rgba(92, 117, 94, 1) 100%); */
 }
 
-#download-now:hover {
+#register-now :hover {
     /* transform: scaleX(0); */
     background: rgb(198, 10, 155);
     background: linear-gradient(90deg, rgba(198, 10, 155, 1) 0%, rgba(237, 104, 52, 1) 100%);
@@ -191,7 +190,7 @@ body {
     justify-content: center;
     grid-gap: 30px;
 } */
-/* 
+/*
 .advertisements-div {
     display: flex;
     align-items: center;
@@ -252,7 +251,7 @@ body {
     .advertisements-triple {
         display: none;
     }
-} 
+}
 
  @media screen and (max-width: 1200px) {
     .advertisements-single {
@@ -521,13 +520,14 @@ li:hover {
         display: none !important;
     }
 
-    #download-now {
+    #register-now  {
         right: 15%;
     }
 }
 
 @media screen and (max-width: 500px) {
-    #download-now {
+
+    #register-now {
         display: none !important;
     }
 }
