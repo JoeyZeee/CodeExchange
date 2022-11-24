@@ -74,14 +74,14 @@ body {
 } */
 
 /* Download Now Button */
-#download-now {
+.download-now {
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: large;
     position: absolute;
     top: 23px;
     right: 5%;
-    width: 165px;
+    width: 105px;
     height: 45px;
     border-radius: 5px;
     border: none;
@@ -91,7 +91,7 @@ body {
     background: linear-gradient(90deg, rgba(169, 125, 93, 1) 0%, rgba(92, 117, 94, 1) 100%); */
 }
 
-#download-now:hover {
+.download-now:hover {
     /* transform: scaleX(0); */
     background: rgb(198, 10, 155);
     background: linear-gradient(90deg, rgba(198, 10, 155, 1) 0%, rgba(237, 104, 52, 1) 100%);
@@ -538,13 +538,13 @@ li:hover {
         display: none !important;
     }
 
-    #download-now {
+    .download-now {
         right: 15%;
     }
 }
 
 @media screen and (max-width: 500px) {
-    #download-now {
+    .download-now {
         display: none !important;
     }
 }
@@ -720,4 +720,12 @@ li:hover {
     transform: translate(0, -10px) rotate(45deg);
     bottom: -2px;
     left: 2px;
+}
+
+#log-in {
+    right: 30px;
+}
+
+#sign-up {
+    right: 150px;
 }
