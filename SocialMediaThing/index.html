@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-us.css">
     <script src="index.js"></script>
     <title>CodeExchange</title>
 </head>
@@ -37,21 +38,32 @@
                     </a>
                 </ul>
             </div>
-            <img id="logo-img" src="img/logo.png" alt="BASIC">
+            <img id="logo-img" src="img/logo.png">
+            <button id="download-now">Sign Up</button>
+            <button id="download-now">Log In</button>
 
-            <button id="register-now">Register</button>
+            <!-- Ignore this... I am messing around with it a bit -->
+            <!-- <div class="dropdown">
+                <div class="bars" onclick="changeBar(this)">
+                    <button class="dropbtn bar1" onclick="toggleMenu()"></button>
+                    <button class="dropbtn bar2" onclick="toggleMenu()"></button>
+                    <button class="dropbtn bar3" onclick="toggleMenu()"></button>
+                </div>
 
-            <!-- This is menu bar item. Finish later -->
-            <div class="menu-btn">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#header">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#team">Team</a>
+                </div>
+            </div> -->
 
             <h1 id="p1">CodeExchange</h1>
-            <h1 id="p2">The Future of Programming</h1>
-            <h1 id="p3">A quick and easy way to learn to code, and to recieve feedback on your code.</h1>
+            <h1 id="p2">Social Media Programmming</h1>
+            <h1 id="p3">Learn to code by helping like-minded individuals in a fun and exciting environment</h1>
 
+            <!-- Sign Up Button -->
             <button id="get-started">Get Started</button>
         </div>
     </div>
@@ -69,7 +81,7 @@
 
     <div class="features" id="features">
         <div class="text-body">
-            <p><strong>Quick and easy to use,</strong> Comes with everything you need to become a programming expert</p>
+            <p><strong>Learn to code,</strong> in a fun and exciting environment</p>
         </div>
 
         <div class="feature-card clean-card">
@@ -77,8 +89,10 @@
                 <img class="shape-bg" src="img/shape_bg.png" alt="">
                 <img class="main-shape" src="img/shape1.png" alt="">
             </div>
-            <h1>Quick</h1>
-            <h2>With many users on the platform, you'll recieve almost instant feedback on the code you choose to submit, leading to well written code.</h2>
+            <h1>Easy to Get Started</h1>
+            <h2>Create an account for free and make a post every day.
+                You can also solve someone else's post once a day!</h2>
+            <a href="">Learn More ></a>
         </div>
 
         <div class="feature-card robust-card">
@@ -86,8 +100,10 @@
                 <img class="shape-bg" src="img/shape_bg.png" alt="">
                 <img class="main-shape" src="img/shape2.png" alt="">
             </div>
-            <h1>Helpful</h1>
-            <h2>Using CodeExchange, you'll recieve feedback on the code you right from the best of the best, leading to great results and a career in programming.</h2>
+            <h1>Level Up</h1>
+            <h2>The more you learn, the better you become, the higher level you unlock. Upload and solve as many
+                programming problems as you can and advance all the way to the top!</h2>
+            <a href="">Learn More ></a>
         </div>
 
         <div class="feature-card powerful-card">
@@ -95,27 +111,66 @@
                 <img class="shape-bg" src="img/shape_bg.png" alt="">
                 <img class="main-shape" src="img/shape3.png" alt="">
             </div>
-            <h1>Easy</h1>
-            <h2>CodeExchange has a very simple design, that anyone can use, making it the perfect tool for a beginner who is interested in learning the basics of programming.</h2>
+            <h1>Upgrade</h1>
+            <h2>Is once a day not enough for you? Purchase the Premium pack so you can uploade and solve as many
+                problems as you want every day, and a custom tag by your name!</h2>
+            <a href="">Learn More ></a>
         </div>
     </div>
 
     <hr class="solid-divider solid-divider2">
 
     <div class="about">
-        <div class="section1"  id = "about">
-            <p id="title"><strong>Quick & Easy</strong> to Use Boostrap Template</p>
-            <p id="pgrph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seiam nonumy eirmod tempor invidunt
-                ut labore et
-                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                amet, consetetur sadipscing.</p>
-
+        <div class="section1">
+            <p id="title">What is <strong>CodeExchange</strong> all about?</p>
+            <p id="pgrph">CodeExchange is a programming site, with the sole goal of helping others learn to program, and
+                improve the skills of those that already know how to program. Every 24 hours, you are prompted to enter
+                a piece of code that is reviewed by a random user online that gives you feedback on improving that code.
+                This earns you bits, that can be used to unlock different ranks. This site will allow you to interact
+                with and ask questions of other programmers, while also helping others' with their own problems!</p>
+            <!-- This button links to sign up -->
             <button id="try-it-free">Try it Free</button>
-            <img id="main" src="img/about/im6.png" alt="">
-            <img src="img/about/im5.png" alt="" id="bg">
         </div>
     </div>
+
+    <div class="about-us" id="team">
+        <h1 id="our-team">Our Team</h1>
+        <div class="about-us-column">
+            <div class="about-us-card">
+                <center>
+                    <img src="img/about-us/imageOfAlex.jpg" alt="Alex" style="width:47%">
+                </center>
+                <div class="about-us-container">
+                    <h2>Alex</h2>
+                    <p class="about-us-title">Co Founder and Frontend Engineer</p>
+                    <p>I'm Alex! I have built the frontend of CodeExchange using HTML, CSS, and JavaScript. I hope that
+                        you can make the most of your time on the site and have your problems solved by like-minded
+                        individuals. Feel free to contact me with any questions, concerns, and recommendations that you
+                        would like to be done. We're always looking to improve your time!</p>
+                    <a href="mailto:alex@chate.info"><button style="width: 100%">Email Alex!</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-us-column">
+            <div class="about-us-card">
+                <center>
+                    <img src="img/about-us/imageOfJoey.jpg" alt="Joey" style="width:47%">
+                </center>
+                <div class="about-us-container">
+                    <h2>Joey</h2>
+                    <p class="about-us-title">Co Founder and Backend Engineer</p>
+                    <p>Hi! My name is Joey, and I build the backend of CodeExchange using languages such as PHP and SQL!
+                        My main goals are to get you to have a safe and fun time on our website! I am so excited for you
+                        to explore the site, and learn all about programming. The more people that you help, the better
+                        you become, so sign up, log in, and begin your programming journey!</p>
+                    <!-- <br><br><br><br> -->
+                    <a href="mailto:joey.zambreno@bergmanacademy.org"><button style="width:100%">Email
+                            Joey!</button></a>
+
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
