@@ -59,3 +59,18 @@ body {
 	background-color: #2868c7;
   	transition: background-color 0.2s;
 }
+
+#login {
+  padding: 0px;
+}
+
+#login-clickable {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: #3274d6;
+}
+
+#login-clickable:hover {
+  color: #4232d6;
+}

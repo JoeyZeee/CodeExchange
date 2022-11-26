@@ -10,10 +10,9 @@ body {
     background: url(img/background-im.png);
 }
 
-.register {
-	height: 60px;
-	width: 100%;
-	border: 0;
+#register {
+	background-color: white;
+
 }
 
 .login {
@@ -147,4 +146,33 @@ body.loggedin {
 .content > div p {
 	padding: 5px;
 	margin: 0 0 10px 0;
+}
+
+.forgot-password {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: #3274d6;
+  position: relative;
+  top: -5px;
+  right: 57.5px;
+}
+
+.forgot-password:hover {
+  color: #4232d6;
+}
+
+#register {
+  padding: 0px;
+}
+
+#register-clickable {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: #3274d6;
+}
+
+#register-clickable:hover {
+  color: #4232d6;
 }
