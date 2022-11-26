@@ -461,7 +461,7 @@ hr.solid-divider2 {
     justify-content: center;
 } */
 
-.about>.section1>#title {
+.about>.section1>#about-title {
     position: relative;
     font-size: 36px;
     width: 400px;
