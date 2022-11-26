@@ -21,3 +21,5 @@ window.onclick = function (event) {
 function changeBar(x) {
     x.classList.toggle("change");
 }
+
+addEventListener('dragstart',function(e){e.preventDefault()});
