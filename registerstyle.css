@@ -6,8 +6,8 @@
   	-moz-osx-font-smoothing: grayscale;
 }
 body {
-  	background-color: #435165;
-  	margin: 0;
+  background: url(img/background-im.png);
+	margin: 0;
 }
 .register {
   	width: 400px;

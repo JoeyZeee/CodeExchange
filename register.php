@@ -25,9 +25,11 @@ if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 	exit('Email is not valid!');
 }
 
-if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 5) {
-	exit('Password must be between 5 and 20 characters long!');
+if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 8) {
+	exit('Password must be between 8 and 20 characters long!');
 }
+
+// TO IMPLEMENT: Check to see if password and rpt-password match
 
 // Make sure the submitted registration values are not empty.
 if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email'])) {
