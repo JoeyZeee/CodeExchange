@@ -31,8 +31,13 @@ if (strlen($_POST['password']) > 20 || strlen($_POST['password']) < 8) {
 
 // TO IMPLEMENT: Check to see if password and rpt-password match
 
+$password = $_POST['password'];
+$rpt_password = $_POST['rpt_password'];
+$username = $_POST['username'];
+$email = $_POST['email'];
+
 // Make sure the submitted registration values are not empty.
-if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email'])) {
+if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['email']) || empty($_POST['rpt_password'])) {
 	// One or more values are empty.
 	exit('Please complete the registration form');
 }
@@ -51,15 +56,19 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
     // Username doesnt exists, insert new account
     if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email) VALUES (?, ?, ?)')) {
     	// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
-    	$password = $_POST['password'];
-      $username = $_POST['username'];
-      $email = $_POST['email'];
 
       if (!$con) {
         die("Connection failed: " . mysqli_connect_error());
       }
 
-      $sql = "INSERT INTO accounts (username, password, email, num_bits, rank) VALUES ('$username', '$password', '$email', 0, 'Newbie')";
+
+			if ($rpt_password == $password) {
+				echo "Works";
+			} else {
+				die("Incorrect Repeated Password!" . mysqli_connect_error());
+			}
+
+      $sql = "INSERT INTO accounts (username, password, rpt_password, email, num_bits, rank) VALUES ('$username', '$password', '$rpt_password', '$email', 0, 'Newbie')";
       if (mysqli_query($con, $sql)) {
         echo "New record created successfully";
         header("Location: ../../../CodeExchange/");
