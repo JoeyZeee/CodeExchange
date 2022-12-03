@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/friends.css">
+    <link rel="stylesheet" href="/css/about-us.css">
+    <link rel="stylesheet" href="/css/bubbles.css">
+    <link rel="icon" href="/img/icon.png">
+    <script src="index.js"></script>
+    <title>CodeExchange</title>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/hybrid.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <a href="#">
+        <div id="to-top">
+            <div class="arrow-up"></div>
+        </div>
+    </a>
+
+    <!-- Header -->
+    <div class="header" id="header">
+        <img id="main-background" src="img/header-background.png" alt="">
+        <div class="top-header">
+            <div class="top-top-header">
+                <div class="nav">
+                    <ul>
+                        <a href="/main.html">
+                            <li>My Feed</li>
+                        </a>
+                        <a href="/myPosts.html">
+                            <li>My Posts</li>
+                        </a>
+                        <a href="/myFriends.html">
+                            <li>My Friends</li>
+                        </a>
+                        <a href="#faq">
+                            <li>My Profile</li>
+                        </a>
+                    </ul>
+                </div>
+                <img id="logo-img" src="img/logo.png">
+            </div>
+        </div>
+    </div>
+    <!-- End of Header -->
+
+    <!-- Start of Feed -->
+    <div class="feed">
+        <div class="post post1" id="post1">
+
+            <!-- This is the user profile of who posted. It is seen in blue on the images -->
+            <div id="user-profile">
+                <img id="user-profile-image" src="img/profile-images/profileImage15.png" alt="">
+                <h1 id="user-profile-name">Me</h1>
+            </div>
+
+            <div id="user-description">
+
+            </div>
+        </div>
+
+        <div class="post post2" id="post2">
+
+            <!-- This is the user profile of who posted. It is seen in blue on the images -->
+            <div id="user-profile">
+                <img id="user-profile-image" src="img/profile-images/profileImage15.png" alt="">
+                <h1 id="user-profile-name">Me</h1>
+            </div>
+
+            <div id="code-section">
+                <pre><code class="javascript">const web3 = new Web3("https://eth-goerli.g.alchemy.com/v2/YPhlCYJ_fLdms1LpSRNs1n6rfcIqGHT9");
+const payDrink = (async () => {
+
+console.log("ethAmount");
+try{
+const contract = new web3.eth.Contract(ContractAbi,contractAddress);
+const transaction = await contract.methods.transfer().send({
+from: '0x9126de09872d12c4f6d417e2cb6061d1ad9e4708',
+value: web3.utils.toWei("0.0001", 'ether'),
+});
+
+const transactionReciept = await transaction.wait();
+console.log(transactionReciept);}
+catch(err){console.log("eee",err);}
+
+})
+</code></pre>
+            </div>
+
+            <div id="explanation">
+                <p>My calling smart contract method is: Transfer ethers and use alchemy . when clicking the button
+                    call
+                    payDrink method then show this error: [Error: Returned error: Unsupported method:
+                    eth_sendTransaction.
+                    Alchemy does not hold users' private keys. See available methods at
+                    https://docs.alchemy.com/alchemy/documentation/apis]</p>
+            </div>
+        </div>
+
+        <div class="post post3" id="post3">
+
+            <!-- This is the user profile of who posted. It is seen in blue on the images -->
+            <div id="user-profile">
+                <img id="user-profile-image" src="img/profile-images/profileImage15.png" alt="">
+                <h1 id="user-profile-name">Me</h1>
+            </div>
+
+            <div id="code-section">
+                <pre><code class="javascript">const web3 = new Web3("https://eth-goerli.g.alchemy.com/v2/YPhlCYJ_fLdms1LpSRNs1n6rfcIqGHT9");
+const payDrink = (async () => {
+
+console.log("ethAmount");
+try{
+const contract = new web3.eth.Contract(ContractAbi,contractAddress);
+const transaction = await contract.methods.transfer().send({
+from: '0x9126de09872d12c4f6d417e2cb6061d1ad9e4708',
+value: web3.utils.toWei("0.0001", 'ether'),
+});
+
+const transactionReciept = await transaction.wait();
+console.log(transactionReciept);}
+catch(err){console.log("eee",err);}
+
+})
+</code></pre>
+            </div>
+
+            <div id="explanation">
+                <p>My calling smart contract method is: Transfer ethers and use alchemy . when clicking the button
+                    call
+                    payDrink method then show this error: [Error: Returned error: Unsupported method:
+                    eth_sendTransaction.
+                    Alchemy does not hold users' private keys. See available methods at
+                    https://docs.alchemy.com/alchemy/documentation/apis]</p>
+            </div>
+        </div>
+
+        <div class="post post4" id="post4">
+
+            <!-- This is the user profile of who posted. It is seen in blue on the images -->
+            <div id="user-profile">
+                <img id="user-profile-image" src="img/profile-images/profileImage15.png" alt="">
+                <h1 id="user-profile-name">Me</h1>
+            </div>
+
+            <div id="code-section">
+                <pre><code class="javascript">const web3 = new Web3("https://eth-goerli.g.alchemy.com/v2/YPhlCYJ_fLdms1LpSRNs1n6rfcIqGHT9");
+const payDrink = (async () => {
+
+console.log("ethAmount");
+try{
+const contract = new web3.eth.Contract(ContractAbi,contractAddress);
+const transaction = await contract.methods.transfer().send({
+from: '0x9126de09872d12c4f6d417e2cb6061d1ad9e4708',
+value: web3.utils.toWei("0.0001", 'ether'),
+});
+
+const transactionReciept = await transaction.wait();
+console.log(transactionReciept);}
+catch(err){console.log("eee",err);}
+
+})
+</code></pre>
+            </div>
+
+            <div id="explanation">
+                <p>My calling smart contract method is: Transfer ethers and use alchemy . when clicking the button
+                    call
+                    payDrink method then show this error: [Error: Returned error: Unsupported method:
+                    eth_sendTransaction.
+                    Alchemy does not hold users' private keys. See available methods at
+                    https://docs.alchemy.com/alchemy/documentation/apis]</p>
+            </div>
+        </div>
+
+        <div class="post post5" id="post5">
+
+            <!-- This is the user profile of who posted. It is seen in blue on the images -->
+            <div id="user-profile">
+                <img id="user-profile-image" src="img/profile-images/profileImage15.png" alt="">
+                <h1 id="user-profile-name">Me</h1>
+            </div>
+
+            <div id="code-section">
+                <pre><code class="javascript">const web3 = new Web3("https://eth-goerli.g.alchemy.com/v2/YPhlCYJ_fLdms1LpSRNs1n6rfcIqGHT9");
+const payDrink = (async () => {
+
+console.log("ethAmount");
+try{
+const contract = new web3.eth.Contract(ContractAbi,contractAddress);
+const transaction = await contract.methods.transfer().send({
+from: '0x9126de09872d12c4f6d417e2cb6061d1ad9e4708',
+value: web3.utils.toWei("0.0001", 'ether'),
+});
+
+const transactionReciept = await transaction.wait();
+console.log(transactionReciept);}
+catch(err){console.log("eee",err);}
+
+})
+</code></pre>
+            </div>
+
+            <div id="explanation">
+                <p>My calling smart contract method is: Transfer ethers and use alchemy . when clicking the button
+                    call
+                    payDrink method then show this error: [Error: Returned error: Unsupported method:
+                    eth_sendTransaction.
+                    Alchemy does not hold users' private keys. See available methods at
+                    https://docs.alchemy.com/alchemy/documentation/apis]</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
