@@ -1,0 +1,45 @@
+.about-us-column {
+    float: left;
+    width: 48.7%;
+    margin: auto;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.about-us-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.about-us-container {
+    padding: 0 16px;
+}
+
+.about-us-container::after,
+.about-us-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.about-us-title {
+    color: grey;
+}
+
+.about-us-button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .about-us-column {
+        width: 100%;
+        display: block;
+    }
+}
